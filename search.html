@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Books</title>
+</head>
+<body>
+    <h1>Search Books</h1>
+    <input type="text" id="bookName"
+           placeholder="Enter book name">
+    <button onclick="searchBook()">Search</button>
+    <p id="result"></p>
+
+    <script>
+        function searchBook() {
+            var name = document.getElementById("bookName").value;
+            document.getElementById("result").textContent =
+                name ? "Searching for: " + name :
+                "Please enter a book name.";
+        }
+    </script>
+
+    <a href="index.html">Home</a>
+</body>
+</html>
